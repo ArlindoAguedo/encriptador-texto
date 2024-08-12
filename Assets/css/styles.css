@@ -1,6 +1,7 @@
 /* FUENTES */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300..700&display=swap');
+
 /* GLOBAL CSS */
 
 :root {
@@ -36,12 +37,8 @@
 
 body {
     min-height: 100vdh;
-    /* display: block;
-    box-sizing: border-box; */
     background: url(../images/prueba3.jpg) no-repeat center center fixed;
-    /* background-color: var(--cianazuloscuro) ; */
     background-size: cover;
-    /* width: 100%; */
 }
 
 /* Encabezado */
@@ -71,7 +68,6 @@ header{
 main{
     display: flex;
     flex-direction: row;
-    /* background: url("../images/fondo_encriptador.avif") no-repeat; */
     background-size: cover ;
     background-position: center;
 } 
@@ -194,7 +190,7 @@ main{
     box-shadow: 10px 24px 32px -8px var(--grisoscuro);
     position: relative;
     margin-top: 30px;
-    margin-bottom: 19px;
+    margin-bottom: 12px;
     border-radius: 32px;
     text-align: center;
 }
@@ -272,7 +268,6 @@ main{
     border-radius: 24px;
 }
 
-
 /* Pie de página */
 
 .footer {
@@ -315,8 +310,8 @@ main{
     font-size: 16px;
 }
 
-
 /* Media dispositivos menores de 1250px*/
+
 @media(max-width:1250px){
     main{
         display: flex;
@@ -332,11 +327,11 @@ main{
     .logo{
         margin: 0px 0px 0px 100px;
         font-size: 20px;
-        width:75%;
+        width:55%;
     }
 
     .header-title{
-        margin: 25px 0px 0px 10px;
+        margin: 25px 0px 0px 50px;
     }
 
     .encriptador{
@@ -392,16 +387,17 @@ main{
         height: 210px ;
         display: flex;
     }
-
-    .texto-uno{
-        display: block;
-        height: 100px;
-        padding: 0;
+    .texto-dos{
+        display: grid;
+        justify-content: center;
     }
 
-    .texto-dos{
-        display: block;
-        height: 10px;
+    .texto-uno{
+        display:grid;
+        position: center;
+        height: 80px;
+        padding: 0;
+        bottom: 0px;
     }
 
     footer{
@@ -427,13 +423,9 @@ main{
     }
 }
 
-
 /* Media dispositivos menores de 720px*/
+
 @media(max-width:720px){
-    /* header{
-        display: grid;
-        gap: 2px;
-    } */
 
     .header-title{
         margin: 0px;
@@ -441,13 +433,13 @@ main{
         display: flex;
         gap: 5px;
     }
-    
 
     .logo{
         margin: 0px;
         padding: 0px;
         width:80%;
     }
+    
     .encriptar{
         width: 80%;
         font-size: 24px;
