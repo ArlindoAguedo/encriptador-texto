@@ -388,14 +388,15 @@ main{
         display: flex;
     }
     .texto-dos{
-        display: grid;
         justify-content: center;
+        display: grid;
+        height: 100px;
     }
 
     .texto-uno{
-        display:grid;
         position: center;
-        height: 80px;
+        display:grid;
+        height: 20px;
         padding: 0;
         bottom: 0px;
     }
@@ -415,7 +416,7 @@ main{
         position: inherit;
         width:100%;
     }
-
+ 
     .text {
         margin: 2px 0px 2px 0px;
         font-size: 16px;
